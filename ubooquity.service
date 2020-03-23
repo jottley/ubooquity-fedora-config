@@ -1,0 +1,12 @@
+[Unit]
+Description=Start Ubooquity 
+After=network-online.target
+
+[Service]
+Type=exec
+ExecStart=/bin/bash /etc/ubooquity/ubooquity.sh start
+RemainAfterExit=yes
+ExecStop=/usr/bin/bash /etc/ubooquity/ubooquity.sh stop
+
+[Install]
+WantedBy=multi-user.target
