@@ -6,7 +6,7 @@ The modifications I've made are to point to the locations I have the jar file, a
 
 My file layout is
 
-```bash
+```properties
 .
 ├── etc
 │   ├── systemd
